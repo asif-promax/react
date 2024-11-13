@@ -1,0 +1,33 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card {
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .card-role {
+    font-size: 14px;
+    color: gray;
+  }
+.card:hover{
+    background-color: rgb(110, 110, 110);
+}  

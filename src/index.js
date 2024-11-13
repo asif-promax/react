@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import N from './N';
+import New from './New';
+import Parent from './Parent';
+import Cardparent from './Cardparent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <Cardparent/>
   </React.StrictMode>
 );
 
