@@ -27,7 +27,7 @@ const Tailwind = () => {
         <div>
           OUR SUCCESS STORIES
         </div>
-        <div className=' gap-3 h-80 flex justify-center gap-5 items-center'>
+        <div className=' gap-3 h-80 flex justify-center items-center'>
           <img src={img} alt="" className='h-52 w-52' />
           <img src={img} alt="" className='h-52 w-52'/>
           <img src={img} alt="" className='h-52 w-52'/>

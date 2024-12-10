@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const todo = () => {
+const Todo = () => {
     const person=[
         {name:"athul" ,age:26},
         {name:"athu" ,age:22},
@@ -11,7 +11,7 @@ export const todo = () => {
     <div>
         {person.map((item)=>(
             <div>
-                <h3>{item.person}</h3>
+                <h3>{item.name}</h3>
                 <h3>{item.age}</h3>
             </div>
         )
@@ -20,4 +20,4 @@ export const todo = () => {
   )
 }
 
-export default todo
+export default Todo

@@ -26,12 +26,23 @@ import Cal from './Cal';
 import Main1 from './admin/Main1';
 import Contextprovider from './contextapi/Contextprovider';
 import Contextuser from './contextapi/Contextuser';
+import Todo from './redux/todo/Todo';
+import Maincontext from './translate/Maincontext';
+import Mainuser from './translate/Mainuser';
+import Mainprovider from './translate/Mainprovider';
+import { Provider } from 'react-redux';
+import { Store } from './redux/Store';
+import { Counters } from './redux/Counters';
+import Addcart from './redux/Addcart';
+import Cart from './redux/Cart';
+import NewTodo from './redux/todo/NewTodo';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- {/* <BrowserRouter>
+ <BrowserRouter>
  <Routes>
   <Route path='/login' element={<Map></Map>}></Route>
   <Route path='/logi' element={<UseState></UseState>}></Route>
@@ -51,10 +62,27 @@ root.render(
   <Route path='/Calculator' element={<Calculator/>}/>
   <Route path='/Cal' element={<Cal></Cal>}></Route>
   <Route path='/Mains' element={<Main1></Main1>}></Route>
-  </Routes></BrowserRouter> */}
-  <Contextprovider>
+  <Route path='/Addcart' element={<Addcart/>}/>
+  <Route path='/Todo' element={<Todo></Todo>}></Route>
+  <Route path='/New' element={<NewTodo></NewTodo>}></Route>
+  </Routes></BrowserRouter>
+  {/* <Contextprovider>
     <Contextuser></Contextuser>
-  </Contextprovider>
+  </Contextprovider> */}
+  {/* <Mainprovider>
+    <Mainuser></Mainuser>
+  </Mainprovider> */}
+  {/* <Provider store={Store}>
+    <Counters></Counters>
+  </Provider> */}
+  {/* <Provider store={Store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/Addcart' element={<Addcart></Addcart>}></Route>
+        <Route path='/Cart' element={<Cart></Cart>}></Route>
+      </Routes>
+    </BrowserRouter>
+  </Provider> */}
   </React.StrictMode>
 );
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inputString = prompt("Enter a string:");
+
+        let vowel = 0;
+        let consonant = 0;
+        let digit = 0;
+
+        const vowels = "aeiouAEIOU";
+        const digits = "0123456789";
+
+        for (let char of inputString) {
+            if (vowels.includes(char)) {
+                vowel++;
+            } else if (digits.includes(char)) {
+                digit++;
+            } else if (char.toLowerCase() >= 'a' && char.toLowerCase() <= 'z') {
+                consonant++;
+            }
+        }
+        console.log(`vowel:${vowel}`)
+        console.log(`digit:${digit}`)
+        console.log(`consonent:${consonant}`)
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@ const Contextuser = () => {
     const value=useContext(Theamcontext)
   return (
     <div>
-        <h1 className={value.theme=="light"?"dark":"light"}>CONTEXT API</h1>
+        <h1 className={value.theam=="light"?"dark":"light"}>CONTEXT API</h1>
         <button onClick={value.toggletheam}>click</button>
     </div>
   )
